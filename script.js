@@ -47,7 +47,7 @@ window.addNewTask = function addNewTask() {
     if (!description) return
     manager.addTask(new Task(description));
     showTaskList();
-    localStorage.setItem("tasks", JSON.stringify(manager.tasksArr)):
+    localStorage.setItem("tasks", JSON.stringify(manager.tasksArr));
     document.getElementById("newTaskInput").value = "";
 };
 

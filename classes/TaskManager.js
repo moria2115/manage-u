@@ -18,5 +18,4 @@ export default class TaskManager {
         let taskIndexToComplete = this.tasksArr.indexOf(taskToComplete);
         this.tasksArr[taskIndexToComplete].completed = true;
     }
-
 }

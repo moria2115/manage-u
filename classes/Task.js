@@ -1,8 +1,8 @@
 export default class Task {
-    constructor(description) {
-        this.completed = false;
+    constructor(description, id, completed = false) {
+        this.completed = completed;
         this.description = description;
-        this.id = Math.floor(Math.random() * 1001);
+        this.id = id ? id : Math.floor(Math.random() * 1001);
     }
     get(propName) {
         return this[propName];

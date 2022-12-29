@@ -19,26 +19,21 @@
         <h1 class="display-3 text-center text-white alert alert-dark">MANAGE-U<i
                 class="fa-solid fa-check-double text-warning"></i>
         </h1>
-        <div class="input-group mb-3 w-50 mx-auto">
+        <div class="input-group mb-3 w-100 mx-auto">
             <input type="text" class="form-control m-1" placeholder="New Task" id="newTaskInput" aria-label="New Task"
                 aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-warning text-white m-1" type="button" onclick="addNewTask()">+</button>
+                <button id="addTask" class="btn btn-warning text-white m-1" type="button"
+                    onclick="addNewTask()">+</button>
             </div>
         </div>
-
         <h3 class="text-center text-success mt-5">Active</h3>
         <div id="activeList">
-
         </div>
-
-
         <hr class="m-4 w-50 mx-auto">
         <h3 class="text-center text-danger">Completed</h3>
         <div id="completedList"></div>
-
     </div>
-
     <script src="./script.js" type="module"></script>
 </body>
 
